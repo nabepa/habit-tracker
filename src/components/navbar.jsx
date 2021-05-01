@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
   calcScore = () => {
     let score = 0;
     this.props.habits.forEach((habit) => (score += habit.count));
